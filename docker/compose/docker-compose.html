@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>docker-compose | 学而时习之</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/img/qiyu.jpg">
+    <meta name="description" content="个人学习博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.6ef7aeda.js" as="script"><link rel="preload" href="/assets/js/2.716a1f37.js" as="script"><link rel="preload" href="/assets/js/14.5fc0584b.js" as="script"><link rel="prefetch" href="/assets/js/10.a4a050d1.js"><link rel="prefetch" href="/assets/js/11.344787d3.js"><link rel="prefetch" href="/assets/js/12.b25f9ccf.js"><link rel="prefetch" href="/assets/js/13.fbdea543.js"><link rel="prefetch" href="/assets/js/15.688b7501.js"><link rel="prefetch" href="/assets/js/16.fbd251ee.js"><link rel="prefetch" href="/assets/js/17.6b6b044b.js"><link rel="prefetch" href="/assets/js/18.4da62780.js"><link rel="prefetch" href="/assets/js/19.e76bd09c.js"><link rel="prefetch" href="/assets/js/20.c6c4fad3.js"><link rel="prefetch" href="/assets/js/21.76180caa.js"><link rel="prefetch" href="/assets/js/22.6f1b73fd.js"><link rel="prefetch" href="/assets/js/23.a95962c2.js"><link rel="prefetch" href="/assets/js/24.eee43d5e.js"><link rel="prefetch" href="/assets/js/25.56e05948.js"><link rel="prefetch" href="/assets/js/26.43f2e3ff.js"><link rel="prefetch" href="/assets/js/27.09054ea0.js"><link rel="prefetch" href="/assets/js/28.c4e54eaa.js"><link rel="prefetch" href="/assets/js/29.06c6b4e5.js"><link rel="prefetch" href="/assets/js/3.eaf135e1.js"><link rel="prefetch" href="/assets/js/30.250c7c81.js"><link rel="prefetch" href="/assets/js/31.91b37571.js"><link rel="prefetch" href="/assets/js/32.d2677ff0.js"><link rel="prefetch" href="/assets/js/33.41ead764.js"><link rel="prefetch" href="/assets/js/34.133f8e54.js"><link rel="prefetch" href="/assets/js/35.362db0cb.js"><link rel="prefetch" href="/assets/js/36.db01e9cc.js"><link rel="prefetch" href="/assets/js/37.78fd90d2.js"><link rel="prefetch" href="/assets/js/38.27112b1c.js"><link rel="prefetch" href="/assets/js/39.c077219c.js"><link rel="prefetch" href="/assets/js/4.75ddad43.js"><link rel="prefetch" href="/assets/js/40.c9153258.js"><link rel="prefetch" href="/assets/js/41.c0b0dba4.js"><link rel="prefetch" href="/assets/js/42.787b0675.js"><link rel="prefetch" href="/assets/js/43.35499284.js"><link rel="prefetch" href="/assets/js/44.ea23a009.js"><link rel="prefetch" href="/assets/js/45.e5cd72c6.js"><link rel="prefetch" href="/assets/js/46.f1392760.js"><link rel="prefetch" href="/assets/js/47.1553f24b.js"><link rel="prefetch" href="/assets/js/48.c696d608.js"><link rel="prefetch" href="/assets/js/49.a7940cc9.js"><link rel="prefetch" href="/assets/js/5.f9f3c101.js"><link rel="prefetch" href="/assets/js/50.e8cadfe4.js"><link rel="prefetch" href="/assets/js/51.080e63aa.js"><link rel="prefetch" href="/assets/js/52.7347d36c.js"><link rel="prefetch" href="/assets/js/53.aba50764.js"><link rel="prefetch" href="/assets/js/54.ca1160dc.js"><link rel="prefetch" href="/assets/js/55.b6574861.js"><link rel="prefetch" href="/assets/js/56.be3c310f.js"><link rel="prefetch" href="/assets/js/57.037820ea.js"><link rel="prefetch" href="/assets/js/58.24474c32.js"><link rel="prefetch" href="/assets/js/59.3b585e3d.js"><link rel="prefetch" href="/assets/js/6.c86d08c0.js"><link rel="prefetch" href="/assets/js/60.75b5bae2.js"><link rel="prefetch" href="/assets/js/61.1831f564.js"><link rel="prefetch" href="/assets/js/62.18a1b459.js"><link rel="prefetch" href="/assets/js/63.346f7f49.js"><link rel="prefetch" href="/assets/js/64.a7683029.js"><link rel="prefetch" href="/assets/js/65.1a938596.js"><link rel="prefetch" href="/assets/js/66.0106ad50.js"><link rel="prefetch" href="/assets/js/67.b0b943da.js"><link rel="prefetch" href="/assets/js/68.60534009.js"><link rel="prefetch" href="/assets/js/69.72e1bfa9.js"><link rel="prefetch" href="/assets/js/7.e0e4b61b.js"><link rel="prefetch" href="/assets/js/70.3a29dfd9.js"><link rel="prefetch" href="/assets/js/71.3e57d5ec.js"><link rel="prefetch" href="/assets/js/72.be56e12f.js"><link rel="prefetch" href="/assets/js/73.b6934116.js"><link rel="prefetch" href="/assets/js/74.81f5b5c3.js"><link rel="prefetch" href="/assets/js/75.e9dacdaf.js"><link rel="prefetch" href="/assets/js/76.7c0855f1.js"><link rel="prefetch" href="/assets/js/77.98a4a794.js"><link rel="prefetch" href="/assets/js/78.3049e29b.js"><link rel="prefetch" href="/assets/js/79.9c741fac.js"><link rel="prefetch" href="/assets/js/8.8c856480.js"><link rel="prefetch" href="/assets/js/80.46cc42c2.js"><link rel="prefetch" href="/assets/js/81.2647d9b6.js"><link rel="prefetch" href="/assets/js/82.0c7a9946.js"><link rel="prefetch" href="/assets/js/83.fa03835c.js"><link rel="prefetch" href="/assets/js/84.909232bc.js"><link rel="prefetch" href="/assets/js/85.7cf12395.js"><link rel="prefetch" href="/assets/js/86.805e61d2.js"><link rel="prefetch" href="/assets/js/87.5ec873ab.js"><link rel="prefetch" href="/assets/js/88.54c3c15b.js"><link rel="prefetch" href="/assets/js/89.286a5312.js"><link rel="prefetch" href="/assets/js/9.6133e2ec.js"><link rel="prefetch" href="/assets/js/90.e91320ce.js"><link rel="prefetch" href="/assets/js/91.932f1454.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">学而时习之</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link">
+  博客相关知识
+</a></li><li class="dropdown-item"><!----> <a href="/javaBasics/" class="nav-link">
+  JavaSE基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/javaFramework/" class="nav-link">
+  Java框架知识
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/js/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/sql/" class="nav-link">
+  数据库知识
+</a></li><li class="dropdown-item"><!----> <a href="/projectPractice/" class="nav-link">
+  项目实战
+</a></li><li class="dropdown-item"><!----> <a href="/projectNote/" class="nav-link">
+  工作项目积累
+</a></li><li class="dropdown-item"><!----> <a href="/faultNote/" class="nav-link">
+  记错本
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/linux/" class="nav-link">
+  linux学习
+</a></li><li class="dropdown-item"><!----> <a href="/git/" class="nav-link">
+  git笔记
+</a></li><li class="dropdown-item"><!----> <a href="/middleware/" class="nav-link">
+  中间件
+</a></li><li class="dropdown-item"><!----> <a href="/docker/" class="nav-link router-link-active">
+  docker笔记
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link">
+  nginx笔记
+</a></li><li class="dropdown-item"><!----> <a href="/systemArchitecture/" class="nav-link">
+  系统架构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具网站" class="dropdown-title"><span class="title">工具网站</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具网站" class="mobile-dropdown-title"><span class="title">工具网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://postimages.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  postimages图床
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link">
+  博客相关知识
+</a></li><li class="dropdown-item"><!----> <a href="/javaBasics/" class="nav-link">
+  JavaSE基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/javaFramework/" class="nav-link">
+  Java框架知识
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/js/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/sql/" class="nav-link">
+  数据库知识
+</a></li><li class="dropdown-item"><!----> <a href="/projectPractice/" class="nav-link">
+  项目实战
+</a></li><li class="dropdown-item"><!----> <a href="/projectNote/" class="nav-link">
+  工作项目积累
+</a></li><li class="dropdown-item"><!----> <a href="/faultNote/" class="nav-link">
+  记错本
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/linux/" class="nav-link">
+  linux学习
+</a></li><li class="dropdown-item"><!----> <a href="/git/" class="nav-link">
+  git笔记
+</a></li><li class="dropdown-item"><!----> <a href="/middleware/" class="nav-link">
+  中间件
+</a></li><li class="dropdown-item"><!----> <a href="/docker/" class="nav-link router-link-active">
+  docker笔记
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link">
+  nginx笔记
+</a></li><li class="dropdown-item"><!----> <a href="/systemArchitecture/" class="nav-link">
+  系统架构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具网站" class="dropdown-title"><span class="title">工具网站</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具网站" class="mobile-dropdown-title"><span class="title">工具网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://postimages.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  postimages图床
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>docker笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docker/deploy/正式服部署完整项目.html" class="sidebar-link">正式服务器部署项目</a></li><li><a href="/docker/compose/docker-compose.html" aria-current="page" class="active sidebar-link">docker-compose笔记</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#dockerfile对应yml配置文件的配置" class="sidebar-link">Dockerfile对应yml配置文件的配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#run" class="sidebar-link">RUN</a></li><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#entrypoint" class="sidebar-link">ENTRYPOINT</a></li><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#from" class="sidebar-link">FROM</a></li></ul></li><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#docker-run-命令后跟的配置对应yml配置文件的配置" class="sidebar-link">docker run 命令后跟的配置对应yml配置文件的配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#p" class="sidebar-link">-p</a></li><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#v" class="sidebar-link">-v</a></li><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#name" class="sidebar-link">--name</a></li></ul></li><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#命令" class="sidebar-link">命令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#重启" class="sidebar-link">重启</a></li></ul></li><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#安装" class="sidebar-link">安装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#docker-compose-2" class="sidebar-link">docker-compose</a></li><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#docker" class="sidebar-link">docker</a></li></ul></li><li class="sidebar-sub-header"><a href="/docker/compose/docker-compose.html#命令-2" class="sidebar-link">命令</a></li></ul></li><li><a href="/docker/skill/word转pdf.html" class="sidebar-link">docx转pdf</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="docker-compose"><a href="#docker-compose" class="header-anchor">#</a> docker-compose</h1> <ul><li>方便统一管理docker镜像与容器,一个配置文件可以配置一组docker容器</li> <li>并且可以把Dockerfile以及docker run命令跟着的一些容器配置/镜像配置统统写进配置文件中,一目了然又便于管理</li></ul> <h2 id="dockerfile对应yml配置文件的配置"><a href="#dockerfile对应yml配置文件的配置" class="header-anchor">#</a> Dockerfile对应yml配置文件的配置</h2> <h3 id="run"><a href="#run" class="header-anchor">#</a> RUN</h3> <ul><li><p>Dockerfile中的RUN配置,对应yml中的<strong>command</strong>配置</p> <div class="language-dockerfile extra-class"><pre class="language-dockerfile"><code><span class="token comment">#为了保证容器时区和系统时区相同，需要挂载docker的/etc/localtime到系统的/etc/localtime。</span>
+<span class="token instruction"><span class="token keyword">RUN</span> /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</span>
+<span class="token comment">#JVM是通过/etc/timezone文件获取时区的，需要在容器中映射或者写入时区文件。</span>
+<span class="token instruction"><span class="token keyword">RUN</span> echo <span class="token string">&quot;Asia/Shanghai&quot;</span> &gt; /etc/timezone</span>
+</code></pre></div><div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">command</span><span class="token punctuation">:</span> 
+      <span class="token punctuation">-</span> /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+      <span class="token punctuation">-</span> echo &quot;Asia/Shanghai&quot; <span class="token punctuation">&gt;</span> /etc/timezone
+</code></pre></div></li></ul> <h3 id="entrypoint"><a href="#entrypoint" class="header-anchor">#</a> ENTRYPOINT</h3> <ul><li><p>Dockerfile中的ENTRYPOINT配置,对应yml中的<strong>entrypoint</strong>配置</p> <div class="language-dockerfile extra-class"><pre class="language-dockerfile"><code><span class="token instruction"><span class="token keyword">ENTRYPOINT</span> [<span class="token string">&quot;java&quot;</span>,<span class="token string">&quot;-Djava.security.egd=file:/dev/./urandom&quot;</span>,<span class="token string">&quot;-jar&quot;</span>,<span class="token string">&quot;/data/app.jar&quot;</span>]</span>
+</code></pre></div><div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">entrypoint</span><span class="token punctuation">:</span> 
+      <span class="token punctuation">-</span> <span class="token string">&quot;java&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;-Djava.security.egd=file:/dev/./urandom&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;-jar&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;/data/package/app.jar&quot;</span>
+</code></pre></div></li></ul> <h3 id="from"><a href="#from" class="header-anchor">#</a> FROM</h3> <ul><li><p>Dockerfile中的FROM配置,对应yml中的<strong>image</strong>配置</p></li> <li><p>表示使用的镜像,要么是远程dockerhub中的,要么是本地的</p> <div class="language-dockerfile extra-class"><pre class="language-dockerfile"><code><span class="token instruction"><span class="token keyword">FROM</span> openjdk:11-jre-slim-buster</span>
+</code></pre></div><div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">image</span><span class="token punctuation">:</span> esystemstech/libreoffice<span class="token punctuation">:</span>6.1<span class="token punctuation">-</span>openjdk<span class="token punctuation">-</span>11<span class="token punctuation">-</span>jdk<span class="token punctuation">-</span>buster<span class="token punctuation">-</span>slim
+</code></pre></div></li></ul> <h2 id="docker-run-命令后跟的配置对应yml配置文件的配置"><a href="#docker-run-命令后跟的配置对应yml配置文件的配置" class="header-anchor">#</a> docker run 命令后跟的配置对应yml配置文件的配置</h2> <h3 id="p"><a href="#p" class="header-anchor">#</a> -p</h3> <ul><li><p>docker run命令行中的-p命令,对应yml中的<strong>ports</strong>配置</p></li> <li><p>功能为映射容器内外端口号,<strong>前方为容器外端口,后方为容器内端口</strong></p> <div class="language-shell extra-class"><pre class="language-shell"><code>-p <span class="token number">8012</span>:8082
+</code></pre></div><div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;8012:8082&quot;</span>
+</code></pre></div></li></ul> <h3 id="v"><a href="#v" class="header-anchor">#</a> -v</h3> <ul><li><p>docker run命令行中的-v命令,对应yml中的<strong>volumes</strong>配置</p></li> <li><p>功能为映射容器内外目录,<strong>前方为容器外目录,后方为容器内目录</strong>,可以用这种方法把容器内的<strong>日志/配置文件</strong>同步到容器外目录中便于访问,也可以把容器外<strong>jar包/配置文件</strong>同步到容器内使用哦</p> <div class="language-shell extra-class"><pre class="language-shell"><code>-v /root/shineray/financial-leasing/manage/package:/data
+</code></pre></div><div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+	<span class="token punctuation">-</span> /D/software/develop/docker<span class="token punctuation">-</span>dir/financial<span class="token punctuation">-</span>leasing/manage/package<span class="token punctuation">:</span>/data/package
+	<span class="token punctuation">-</span> /D/software/develop/docker<span class="token punctuation">-</span>dir/financial<span class="token punctuation">-</span>leasing/manage/cert<span class="token punctuation">:</span>/data/cert
+	<span class="token punctuation">-</span> /D/software/develop/docker<span class="token punctuation">-</span>dir/financial<span class="token punctuation">-</span>leasing/manage/pdf<span class="token punctuation">:</span>/data/pdf
+</code></pre></div></li></ul> <h3 id="name"><a href="#name" class="header-anchor">#</a> --name</h3> <ul><li><p>docker run命令行中的--name命令,对应yml中的<strong>container_name</strong>配置</p> <div class="language-shell extra-class"><pre class="language-shell"><code>--name financial-leasing-manage
+</code></pre></div><div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">container_name</span><span class="token punctuation">:</span> financial<span class="token punctuation">-</span>leasing<span class="token punctuation">-</span>manage<span class="token punctuation">-</span>pdf
+</code></pre></div></li></ul> <h2 id="命令"><a href="#命令" class="header-anchor">#</a> 命令</h2> <h3 id="重启"><a href="#重启" class="header-anchor">#</a> 重启</h3> <ul><li><p><strong>docker-compose的重启和docker不一样</strong>,它的重启是重启service名,<code>docker-compose restart service名</code></p></li> <li><p>也就是配置文件中<code>services:</code>下的一级名称,比如web,这个名称也是我们自己自定义的,一个service下可以有多个容器配置</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">web</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> esystemstech/libreoffice<span class="token punctuation">:</span>6.1<span class="token punctuation">-</span>openjdk<span class="token punctuation">-</span>11<span class="token punctuation">-</span>jdk<span class="token punctuation">-</span>buster<span class="token punctuation">-</span>slim
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> financial<span class="token punctuation">-</span>leasing<span class="token punctuation">-</span>manage<span class="token punctuation">-</span>pdf
+</code></pre></div></li></ul> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <h3 id="docker-compose-2"><a href="#docker-compose-2" class="header-anchor">#</a> docker-compose</h3> <ul><li><p>windows系统安装docker桌面版是直接自带docker-compose的,但是linux必须自己去安装</p></li> <li><p>一般服务器都是centos,我们的服务器是centos8版本</p></li> <li><p>网上搜到的教程是先去<code>https://github.com/docker/compose/releases/latest</code>查看最新版本的版本号</p></li> <li><p>然后执行命令安装,如果访问github下载太慢就把链接中的<code>https://github.com</code>更换为<code>https://get.daocloud.io</code></p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 下载最新版本的 docker-compose 到 /usr/bin 目录下,自行修改1.23.2为最新版本号,注意如果版本有v前缀要加上</span>
+<span class="token function">curl</span> -L https://github.com/docker/compose/releases/download/1.23.2/docker-compose-<span class="token variable"><span class="token variable">`</span><span class="token function">uname</span> -s<span class="token variable">`</span></span>-<span class="token variable"><span class="token variable">`</span><span class="token function">uname</span> -m<span class="token variable">`</span></span> -o /usr/bin/docker-compose
+
+<span class="token comment"># 给 docker-compose 授权</span>
+<span class="token function">chmod</span> +x /usr/bin/docker-compose
+</code></pre></div></li> <li><p>但是这样我失败了,使用对应命令行会报<code>/usr/bin/docker-compose: line 1: Not: command not found</code></p></li> <li><p>于是经过询问群内大佬得知,需要放到<code>/usr/bin</code>目录下而不是<code>/usr/local/bin</code></p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@server01 docker<span class="token punctuation">]</span><span class="token comment"># sudo curl -L &quot;https://github.com/docker/compose/releases/download/v2.6.1/docker-compose-linux-x86_64&quot; -o /usr/bin/docker-compose</span>
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Dload  Upload   Total   Spent    Left  Speed
+<span class="token number">0</span>     <span class="token number">0</span>    <span class="token number">0</span>     <span class="token number">0</span>    <span class="token number">0</span>     <span class="token number">0</span>      <span class="token number">0</span>      <span class="token number">0</span> --:--:-- --:--:-- --:--:--     <span class="token number">0</span>
+<span class="token number">100</span> <span class="token number">24</span>.5M  <span class="token number">100</span> <span class="token number">24</span>.5M    <span class="token number">0</span>     <span class="token number">0</span>  4191k      <span class="token number">0</span>  <span class="token number">0</span>:00:05  <span class="token number">0</span>:00:05 --:--:-- 5418k
+<span class="token punctuation">[</span>root@server01 docker<span class="token punctuation">]</span><span class="token comment"># sudo chmod +x /usr/bin/docker-compose</span>
+<span class="token punctuation">[</span>root@server01 docker<span class="token punctuation">]</span><span class="token comment"># docker-compose version</span>
+Docker Compose version v2.6.1
+</code></pre></div></li></ul> <h3 id="docker"><a href="#docker" class="header-anchor">#</a> docker</h3> <h4 id="阿里云安装"><a href="#阿里云安装" class="header-anchor">#</a> 阿里云安装</h4> <ul><li><p>服务器是买的阿里云计算型c7,centos7.9版本</p></li> <li><p><a href="https://www.runoob.com/docker/centos-docker-install.html" target="_blank" rel="noopener noreferrer">使用官方脚本自动安装<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">curl</span> -fsSL https://get.docker.com <span class="token operator">|</span> <span class="token function">bash</span> -s <span class="token function">docker</span> --mirror Aliyun
+</code></pre></div></li> <li><p>然后安装一切正常,但是如果运行<code>docker --version</code>会报错<code>Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?</code></p></li> <li><p>这是因为<a href="https://blog.csdn.net/weixin_45496075/article/details/109123709" target="_blank" rel="noopener noreferrer">安装完没在系统中启动<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>,只需要运行<code>systemctl start docker</code>即可</p></li></ul> <h4 id="腾讯云安装"><a href="#腾讯云安装" class="header-anchor">#</a> 腾讯云安装</h4> <ul><li><p>我在腾讯云服务器使用上面的自动安装脚本失败了<code>curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun</code></p></li> <li><p>报错信息为<code>ERROR: Unsupported distribution 'tencentos'</code></p></li> <li><p>登录腾讯云控制台,发现系统为<code>TencentOS Server 3.1 (TK4)</code>版本,该版本已经预置docker</p></li></ul> <blockquote><p>本文使用云服务器实例操作系统以 CentOS 8.2 及 7.6 为例。
+若您使用了 TencentOS Server 操作系统，则需对应实际版本进行操作：</p> <p>TencentOS Server 2.4 (TK4)：镜像已预置 Docker，无需再次安装，可参考 使用 Docker 直接开始使用。
+TencentOS Server 3.1：镜像已预置 Docker，无需再次安装，可参考 使用 Docker 直接开始使用。</p></blockquote> <ul><li>只需要按照<a href="https://cloud.tencent.com/document/product/213/46000#userDocker" target="_blank" rel="noopener noreferrer">教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>使用即可,运行<code>systemctl start docker</code>启动docker</li></ul> <h2 id="命令-2"><a href="#命令-2" class="header-anchor">#</a> 命令</h2> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 默认使用docker-compose.yml构建镜像</span>
+$ <span class="token function">docker-compose</span> build
+$ <span class="token function">docker-compose</span> build --no-cache <span class="token comment"># 不带缓存的构建</span>
+
+<span class="token comment"># 指定不同yml文件模板用于构建镜像</span>
+$ <span class="token function">docker-compose</span> build -f docker-compose1.yml
+
+<span class="token comment"># 列出Compose文件构建的镜像</span>
+$ <span class="token function">docker-compose</span> images            	              
+
+<span class="token comment"># 启动所有编排容器服务</span>
+$ <span class="token function">docker-compose</span> up -d
+
+<span class="token comment"># 查看正在运行中的容器</span>
+$ <span class="token function">docker-compose</span> <span class="token function">ps</span> 
+
+<span class="token comment"># 查看所有编排容器，包括已停止的容器</span>
+$ <span class="token function">docker-compose</span> <span class="token function">ps</span> -a
+
+<span class="token comment"># 进入指定容器执行命令</span>
+$ <span class="token function">docker-compose</span> <span class="token builtin class-name">exec</span> nginx <span class="token function">bash</span> 
+$ <span class="token function">docker-compose</span> <span class="token builtin class-name">exec</span> web python manage.py migrate --noinput
+
+<span class="token comment"># 查看web容器的实时日志</span>
+$ <span class="token function">docker-compose</span> logs -f web
+
+<span class="token comment"># 停止所有up命令启动的容器</span>
+$ <span class="token function">docker-compose</span> down 
+
+<span class="token comment"># 停止所有up命令启动的容器,并移除数据卷</span>
+$ <span class="token function">docker-compose</span> down -v
+
+<span class="token comment"># 重新启动停止服务的容器</span>
+$ <span class="token function">docker-compose</span> restart web
+
+<span class="token comment"># 暂停web容器</span>
+$ <span class="token function">docker-compose</span> pause web
+
+<span class="token comment"># 恢复web容器</span>
+$ <span class="token function">docker-compose</span> unpause web
+
+<span class="token comment"># 删除web容器，删除前必需停止stop web容器服务</span>
+$ <span class="token function">docker-compose</span> <span class="token function">rm</span> web  
+
+<span class="token comment"># 查看各个服务容器内运行的进程 </span>
+$ <span class="token function">docker-compose</span> <span class="token function">top</span>                            
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/25/2023, 9:35:24 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docker/deploy/正式服部署完整项目.html" class="prev">
+        正式服务器部署项目
+      </a></span> <span class="next"><a href="/docker/skill/word转pdf.html">
+        docx转pdf
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6ef7aeda.js" defer></script><script src="/assets/js/2.716a1f37.js" defer></script><script src="/assets/js/14.5fc0584b.js" defer></script>
+  </body>
+</html>

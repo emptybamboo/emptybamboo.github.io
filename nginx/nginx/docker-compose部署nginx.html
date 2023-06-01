@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nginx部署 | 学而时习之</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/img/qiyu.jpg">
+    <meta name="description" content="个人学习博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.6ef7aeda.js" as="script"><link rel="preload" href="/assets/js/2.716a1f37.js" as="script"><link rel="preload" href="/assets/js/51.080e63aa.js" as="script"><link rel="prefetch" href="/assets/js/10.a4a050d1.js"><link rel="prefetch" href="/assets/js/11.344787d3.js"><link rel="prefetch" href="/assets/js/12.b25f9ccf.js"><link rel="prefetch" href="/assets/js/13.fbdea543.js"><link rel="prefetch" href="/assets/js/14.5fc0584b.js"><link rel="prefetch" href="/assets/js/15.688b7501.js"><link rel="prefetch" href="/assets/js/16.fbd251ee.js"><link rel="prefetch" href="/assets/js/17.6b6b044b.js"><link rel="prefetch" href="/assets/js/18.4da62780.js"><link rel="prefetch" href="/assets/js/19.e76bd09c.js"><link rel="prefetch" href="/assets/js/20.c6c4fad3.js"><link rel="prefetch" href="/assets/js/21.76180caa.js"><link rel="prefetch" href="/assets/js/22.6f1b73fd.js"><link rel="prefetch" href="/assets/js/23.a95962c2.js"><link rel="prefetch" href="/assets/js/24.eee43d5e.js"><link rel="prefetch" href="/assets/js/25.56e05948.js"><link rel="prefetch" href="/assets/js/26.43f2e3ff.js"><link rel="prefetch" href="/assets/js/27.09054ea0.js"><link rel="prefetch" href="/assets/js/28.c4e54eaa.js"><link rel="prefetch" href="/assets/js/29.06c6b4e5.js"><link rel="prefetch" href="/assets/js/3.eaf135e1.js"><link rel="prefetch" href="/assets/js/30.250c7c81.js"><link rel="prefetch" href="/assets/js/31.91b37571.js"><link rel="prefetch" href="/assets/js/32.d2677ff0.js"><link rel="prefetch" href="/assets/js/33.41ead764.js"><link rel="prefetch" href="/assets/js/34.133f8e54.js"><link rel="prefetch" href="/assets/js/35.362db0cb.js"><link rel="prefetch" href="/assets/js/36.db01e9cc.js"><link rel="prefetch" href="/assets/js/37.78fd90d2.js"><link rel="prefetch" href="/assets/js/38.27112b1c.js"><link rel="prefetch" href="/assets/js/39.c077219c.js"><link rel="prefetch" href="/assets/js/4.75ddad43.js"><link rel="prefetch" href="/assets/js/40.c9153258.js"><link rel="prefetch" href="/assets/js/41.c0b0dba4.js"><link rel="prefetch" href="/assets/js/42.787b0675.js"><link rel="prefetch" href="/assets/js/43.35499284.js"><link rel="prefetch" href="/assets/js/44.ea23a009.js"><link rel="prefetch" href="/assets/js/45.e5cd72c6.js"><link rel="prefetch" href="/assets/js/46.f1392760.js"><link rel="prefetch" href="/assets/js/47.1553f24b.js"><link rel="prefetch" href="/assets/js/48.c696d608.js"><link rel="prefetch" href="/assets/js/49.a7940cc9.js"><link rel="prefetch" href="/assets/js/5.f9f3c101.js"><link rel="prefetch" href="/assets/js/50.e8cadfe4.js"><link rel="prefetch" href="/assets/js/52.7347d36c.js"><link rel="prefetch" href="/assets/js/53.aba50764.js"><link rel="prefetch" href="/assets/js/54.ca1160dc.js"><link rel="prefetch" href="/assets/js/55.b6574861.js"><link rel="prefetch" href="/assets/js/56.be3c310f.js"><link rel="prefetch" href="/assets/js/57.037820ea.js"><link rel="prefetch" href="/assets/js/58.24474c32.js"><link rel="prefetch" href="/assets/js/59.3b585e3d.js"><link rel="prefetch" href="/assets/js/6.c86d08c0.js"><link rel="prefetch" href="/assets/js/60.75b5bae2.js"><link rel="prefetch" href="/assets/js/61.1831f564.js"><link rel="prefetch" href="/assets/js/62.18a1b459.js"><link rel="prefetch" href="/assets/js/63.346f7f49.js"><link rel="prefetch" href="/assets/js/64.a7683029.js"><link rel="prefetch" href="/assets/js/65.1a938596.js"><link rel="prefetch" href="/assets/js/66.0106ad50.js"><link rel="prefetch" href="/assets/js/67.b0b943da.js"><link rel="prefetch" href="/assets/js/68.60534009.js"><link rel="prefetch" href="/assets/js/69.72e1bfa9.js"><link rel="prefetch" href="/assets/js/7.e0e4b61b.js"><link rel="prefetch" href="/assets/js/70.3a29dfd9.js"><link rel="prefetch" href="/assets/js/71.3e57d5ec.js"><link rel="prefetch" href="/assets/js/72.be56e12f.js"><link rel="prefetch" href="/assets/js/73.b6934116.js"><link rel="prefetch" href="/assets/js/74.81f5b5c3.js"><link rel="prefetch" href="/assets/js/75.e9dacdaf.js"><link rel="prefetch" href="/assets/js/76.7c0855f1.js"><link rel="prefetch" href="/assets/js/77.98a4a794.js"><link rel="prefetch" href="/assets/js/78.3049e29b.js"><link rel="prefetch" href="/assets/js/79.9c741fac.js"><link rel="prefetch" href="/assets/js/8.8c856480.js"><link rel="prefetch" href="/assets/js/80.46cc42c2.js"><link rel="prefetch" href="/assets/js/81.2647d9b6.js"><link rel="prefetch" href="/assets/js/82.0c7a9946.js"><link rel="prefetch" href="/assets/js/83.fa03835c.js"><link rel="prefetch" href="/assets/js/84.909232bc.js"><link rel="prefetch" href="/assets/js/85.7cf12395.js"><link rel="prefetch" href="/assets/js/86.805e61d2.js"><link rel="prefetch" href="/assets/js/87.5ec873ab.js"><link rel="prefetch" href="/assets/js/88.54c3c15b.js"><link rel="prefetch" href="/assets/js/89.286a5312.js"><link rel="prefetch" href="/assets/js/9.6133e2ec.js"><link rel="prefetch" href="/assets/js/90.e91320ce.js"><link rel="prefetch" href="/assets/js/91.932f1454.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">学而时习之</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link">
+  博客相关知识
+</a></li><li class="dropdown-item"><!----> <a href="/javaBasics/" class="nav-link">
+  JavaSE基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/javaFramework/" class="nav-link">
+  Java框架知识
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/js/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/sql/" class="nav-link">
+  数据库知识
+</a></li><li class="dropdown-item"><!----> <a href="/projectPractice/" class="nav-link">
+  项目实战
+</a></li><li class="dropdown-item"><!----> <a href="/projectNote/" class="nav-link">
+  工作项目积累
+</a></li><li class="dropdown-item"><!----> <a href="/faultNote/" class="nav-link">
+  记错本
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/linux/" class="nav-link">
+  linux学习
+</a></li><li class="dropdown-item"><!----> <a href="/git/" class="nav-link">
+  git笔记
+</a></li><li class="dropdown-item"><!----> <a href="/middleware/" class="nav-link">
+  中间件
+</a></li><li class="dropdown-item"><!----> <a href="/docker/" class="nav-link">
+  docker笔记
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link router-link-active">
+  nginx笔记
+</a></li><li class="dropdown-item"><!----> <a href="/systemArchitecture/" class="nav-link">
+  系统架构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具网站" class="dropdown-title"><span class="title">工具网站</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具网站" class="mobile-dropdown-title"><span class="title">工具网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://postimages.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  postimages图床
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuePress/" class="nav-link">
+  博客相关知识
+</a></li><li class="dropdown-item"><!----> <a href="/javaBasics/" class="nav-link">
+  JavaSE基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/javaFramework/" class="nav-link">
+  Java框架知识
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/js/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/sql/" class="nav-link">
+  数据库知识
+</a></li><li class="dropdown-item"><!----> <a href="/projectPractice/" class="nav-link">
+  项目实战
+</a></li><li class="dropdown-item"><!----> <a href="/projectNote/" class="nav-link">
+  工作项目积累
+</a></li><li class="dropdown-item"><!----> <a href="/faultNote/" class="nav-link">
+  记错本
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/linux/" class="nav-link">
+  linux学习
+</a></li><li class="dropdown-item"><!----> <a href="/git/" class="nav-link">
+  git笔记
+</a></li><li class="dropdown-item"><!----> <a href="/middleware/" class="nav-link">
+  中间件
+</a></li><li class="dropdown-item"><!----> <a href="/docker/" class="nav-link">
+  docker笔记
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link router-link-active">
+  nginx笔记
+</a></li><li class="dropdown-item"><!----> <a href="/systemArchitecture/" class="nav-link">
+  系统架构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具网站" class="dropdown-title"><span class="title">工具网站</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具网站" class="mobile-dropdown-title"><span class="title">工具网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://postimages.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  postimages图床
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>nginx笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/nginx/nginx/nginx.html" class="sidebar-link">nginx笔记</a></li><li><a href="/nginx/nginx/docker-compose部署nginx.html" class="active sidebar-link">docker-compose部署nginx</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/nginx/nginx/docker-compose部署nginx.html#部署多套前端项目到同一个docker中的nginx" class="sidebar-link">部署多套前端项目到同一个docker中的nginx</a></li><li class="sidebar-sub-header"><a href="/nginx/nginx/docker-compose部署nginx.html#扩展为https项目" class="sidebar-link">扩展为HTTPS项目</a></li><li class="sidebar-sub-header"><a href="/nginx/nginx/docker-compose部署nginx.html#十万个为什么" class="sidebar-link">十万个为什么</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="nginx部署"><a href="#nginx部署" class="header-anchor">#</a> nginx部署</h1> <ul><li><p>首先当然是服务器上安装docker和docker-compose</p></li> <li><p>然后去<a href="http://nginx.org/en/download.html" target="_blank" rel="noopener noreferrer">nginx官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>找到你想安装的版本,下载,找到它的配置文件</p> <div class="language-ini extra-class"><pre class="language-ini"><code>
+<span class="token comment">#user  nobody;</span>
+worker_processes  1;
+
+<span class="token comment">#error_log  logs/error.log;</span>
+<span class="token comment">#error_log  logs/error.log  notice;</span>
+<span class="token comment">#error_log  logs/error.log  info;</span>
+
+<span class="token comment">#pid        logs/nginx.pid;</span>
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+
+
+    <span class="token comment">#access_log  logs/access.log  main;</span>
+
+    sendfile        on;
+    <span class="token comment">#tcp_nopush     on;</span>
+
+    <span class="token comment">#keepalive_timeout  0;</span>
+    keepalive_timeout  300;
+
+    <span class="token comment">#gzip  on;</span>
+
+    server {
+        listen       80;
+        server_name  localhost;
+
+
+        location / {
+            root   /usr/share/nginx/html;
+            <span class="token comment">#匹配不到资源路径的时候，先去读取index.html，然后再路由</span>
+            try_files $uri $uri/ /index.html last;
+            index  index.html index.htm;
+        }
+
+
+        error_page   500 502 503 504  /50x.html;
+        <span class="token key attr-name">location</span> <span class="token punctuation">=</span> <span class="token value attr-value">/50x.html {</span>
+            root   html;
+        }
+
+    }
+
+
+    <span class="token comment"># HTTPS server</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#server {</span>
+    <span class="token comment">#    listen       443 ssl;</span>
+    <span class="token comment">#    server_name  localhost;</span>
+
+    <span class="token comment">#    ssl_certificate      cert.pem;</span>
+    <span class="token comment">#    ssl_certificate_key  cert.key;</span>
+
+    <span class="token comment">#    ssl_session_cache    shared:SSL:1m;</span>
+    <span class="token comment">#    ssl_session_timeout  5m;</span>
+
+    <span class="token comment">#    ssl_ciphers  HIGH:!aNULL:!MD5;</span>
+    <span class="token comment">#    ssl_prefer_server_ciphers  on;</span>
+
+    <span class="token comment">#    location / {</span>
+    <span class="token comment">#        root   html;</span>
+    <span class="token comment">#        index  index.html index.htm;</span>
+    <span class="token comment">#    }</span>
+    <span class="token comment">#}</span>
+
+}
+
+</code></pre></div></li> <li><p>构件好docker-compose.yml配置文件,注意这里的版本和你下载的nginx配置文件版本要一致</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token comment"># yaml 配置实例</span>
+<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3.7'</span>
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">my-nginx-test</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> nginx<span class="token punctuation">:</span>1.23.4 <span class="token comment"># 自定义镜像名:tag名</span>
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> my<span class="token punctuation">-</span>nginx<span class="token punctuation">-</span>test <span class="token comment"># 容器名</span>
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;80:80&quot;</span>
+    <span class="token key atrule">restart</span><span class="token punctuation">:</span> always
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span> <span class="token comment"># 这里的./意味着映射的目录是当前yml配置文件的上级目录下的目录</span>
+      <span class="token punctuation">-</span> ./html<span class="token punctuation">:</span>/usr/share/nginx/html
+      <span class="token punctuation">-</span> ./conf/nginx.conf<span class="token punctuation">:</span>/etc/nginx/nginx.conf
+      <span class="token punctuation">-</span> ./conf.d<span class="token punctuation">:</span>/etc/nginx/conf.d
+      <span class="token punctuation">-</span> ./logs<span class="token punctuation">:</span>/var/log/nginx
+
+</code></pre></div></li> <li><p>然后在服务器上建四个目录,其实还应该多建一个放SSL证书的映射目录</p> <ul><li>/docker-compose/nginx；并将自定义的docker-compose.yml复制到当前文件夹下</li> <li>/docker-compose/nginx/conf；并将自定义的nginx.conf复制到当前文件夹下</li> <li>/docker-compose/nginx/conf.d</li> <li>/docker-compose/nginx/html</li></ul></li> <li><p>然后直接执行<code>docker-compose up -d</code></p></li> <li><p>如果修改了nginx的配置文件就执行<code>docker-compose up -d --force-recreate</code></p></li> <li><p>如果修改了docker-compose.yml就执行<code>docker-compose up --build -d</code></p></li></ul> <h2 id="部署多套前端项目到同一个docker中的nginx"><a href="#部署多套前端项目到同一个docker中的nginx" class="header-anchor">#</a> 部署多套前端项目到同一个docker中的nginx</h2> <ul><li><p>大概看了下教程,其实很简单</p></li> <li><p>要部署多套前端就需要多个存放dist文件的目录,这个目录可以分开创建然后分别映射到docker内部,也可以映射一个目录进去然后在这个目录里再建多个目录存放不同项目</p></li> <li><p>比如我创建一个<code>/root/lzc/software/nginx/app1</code>和<code>/root/lzc/software/nginx/app2</code>目录,并且映射到docker内部</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">volumes</span><span class="token punctuation">:</span> <span class="token comment"># 这里的./意味着映射的目录是当前yml配置文件的上级目录下的目录</span>
+      <span class="token punctuation">-</span> /root/lzc/software/nginx/app1<span class="token punctuation">:</span>/usr/share/nginx/html/app1
+      <span class="token punctuation">-</span> /root/lzc/software/nginx/app2<span class="token punctuation">:</span>/usr/share/nginx/html/app2
+</code></pre></div></li> <li><p>然后修改nginx的配置文件,nginx.conf</p> <div class="language-ini extra-class"><pre class="language-ini"><code><span class="token comment">#基础的单个前端项目时候,nginx的server配置块下,是这么写的</span>
+location / {
+root   /usr/share/nginx/html;
+<span class="token comment">#匹配不到资源路径的时候，先去读取index.html，然后再路由</span>
+try_files $uri $uri/ /index.html last;
+index  index.html index.htm;
+}
+
+<span class="token comment">#修改之后就在server下分多个写,不同之处就是location后面的目录由/变为了/不同前端项目静态文件存储目录比如/app1</span>
+location /dist1 {
+<span class="token comment"># 网站根目录，此处使用容器内的路径</span>
+root /usr/share/nginx/html;
+<span class="token comment"># 默认首页</span>
+index index.html;
+<span class="token comment"># 尝试从磁盘找到请求的文件，如果不存在则跳转到 index.html</span>
+try_files $uri $uri/ /dist1/index.html;
+}
+location /dist2 {
+<span class="token comment"># 网站根目录，此处使用容器内的路径</span>
+root /usr/share/nginx/html;
+<span class="token comment"># 默认首页</span>
+index index.html;
+<span class="token comment"># 尝试从磁盘找到请求的文件，如果不存在则跳转到 index.html</span>
+try_files $uri $uri/ /dist2/index.html;
+}
+</code></pre></div></li> <li><p>如果是映射一个<code>/root/lzc/software/nginx/html</code>目录进去,然后在宿主机的这个目录下再建app1和app2两个目录也可以,修改配置文件基本是一样的操作,唯一的区别就是docker-compose.yml写的稍微有点区别</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">volumes</span><span class="token punctuation">:</span> <span class="token comment"># 这里的./意味着映射的目录是当前yml配置文件的上级目录下的目录</span>
+	<span class="token punctuation">-</span> /root/lzc/software/nginx/html<span class="token punctuation">:</span>/usr/share/nginx/html
+</code></pre></div></li> <li><p>经过我实践之后,我发现应该改成下面这样</p></li> <li><p>root代表你定义的根目录,而你写的location指的是访问你服务器地址的后缀,本身访问你服务器地址就是<code>http:://+你的ip</code>,类似<code>http://127.0.0.1</code>,现在你配置了location,别人访问就得是<code>http:://+你的ip+/location定义的值</code>,类似<code>http://127.0.0.1/manage</code></p></li> <li><p>然后如果你写了try_files这行,你应该在这里添加你写好的/location,而不是加在你配置的location下面的root后面</p></li> <li><p>root就像是你公司大楼,location就是你的具体工位,如果你把root改成你的具体工位,那找你的人看到你的地址就会是工位重复两次</p></li> <li><p>其他的都和预想的一样,先去之前映射进nginx容器的文件夹的html文件夹下创建不同前端项目的新目录,然后放文件进去,修改了nginx配置文件的话就docker重启一下即可,就可以正常访问前端页面,前提是前端项目配置不出问题</p></li> <li><div class="language-ini extra-class"><pre class="language-ini"><code><span class="token comment">#现在分为两个前端项目</span>
+<span class="token comment">#后台</span>
+location /manage {
+root   /usr/share/nginx/html;
+<span class="token comment">#匹配不到资源路径的时候，先去读取index.html，然后再路由</span>
+try_files $uri $uri/ /manage/index.html last;
+index  index.html index.htm;
+}
+<span class="token comment">#客户端</span>
+location /customer {
+root   /usr/share/nginx/html;
+<span class="token comment">#匹配不到资源路径的时候，先去读取index.html，然后再路由</span>
+try_files $uri $uri/ /customer/index.html last;
+index  index.html index.htm;
+}
+</code></pre></div></li></ul> <h2 id="扩展为https项目"><a href="#扩展为https项目" class="header-anchor">#</a> 扩展为HTTPS项目</h2> <ul><li><p>需要在宿主机的nginx目录下再创建一个certs文件夹(起名随意),然后映射到docker内部的<code>/etc/nginx/certs</code>目录</p></li> <li><p>修改nginx.conf文件，将listen 80改为listen 443 ssl，并添加以下两行，指定证书文件的路径：</p> <div class="language-ini extra-class"><pre class="language-ini"><code>ssl_certificate /etc/nginx/certs/fullchain.pem;
+ssl_certificate_key /etc/nginx/certs/privkey.pem;
+</code></pre></div></li> <li><p><a href="https://cloud.tencent.com/developer/article/1665969" target="_blank" rel="noopener noreferrer">重新启动docker-compose<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">docker-compose</span> down
+<span class="token function">docker-compose</span> up -d
+</code></pre></div></li> <li><p>访问 https://localhost/dist1 或者 https://localhost/dist2 来访问部署的前端项目。</p></li></ul> <h2 id="十万个为什么"><a href="#十万个为什么" class="header-anchor">#</a> 十万个为什么</h2> <ul><li><p>nginx的配置文件中,root写在server下和写在location下各自代表什么含义,有什么区别</p> <ul><li><p>根据我从网络上搜索到的信息，nginx的root配置可以写在server或location下，它们的区别主要在于nginx如何解释location后面的uri，这会使两者分别以不同的方式将请求映射到服务器文件上</p></li> <li><p>一般来说，root写在server下表示为该server指定一个默认的根路径，所有的location都会继承这个路径，除非在location下重新定义root。而root写在location下表示为该location指定一个特定的根路径，这个路径会与location后面的uri拼接起来形成完整的文件路径</p></li> <li><p>举个例子，假设有如下配置：</p> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">root</span> /data/www</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">root</span> /data/html</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>那么当访问<code>http://example.com/index.html</code>时，nginx会去寻找<code>/data/html/index.html</code>这个文件。而当访问<code>http://example.com/img/logo.png</code>时，nginx会去寻找<code>/data/www/img/logo.png</code>这个文件。可以看出，root写在location / 下会覆盖server下的root设置</p></li></ul></li> <li><p>proxy_pass处做反向代理有什么意义</p> <ul><li>你提到的proxy_pass处做反向代理有什么意义，我可以给你一些解释。反向代理的意义有以下几点：
+<ul><li>可以隐藏后端服务器的真实地址，提高安全性和可靠性。</li> <li>可以实现负载均衡，根据不同的策略将请求分发给不同的后端服务器，提高性能和可用性。</li> <li>可以实现缓存和压缩，将后端服务器返回的响应缓存到本地文件或内存中，或者对响应进行压缩，减少网络传输量和延迟。</li> <li>可以实现动静分离，将静态资源和动态资源分别交给不同的服务器处理，提高效率和稳定性。</li></ul></li></ul></li> <li><p>nginx中的proxy_pass反向代理的配置规则具体是如何的</p> <ul><li><p>nginx中的proxy_pass反向代理的配置规则具体是如何的，我可以给你一些例子说明。proxy_pass指令用于设置后端代理服务器的地址和协议，还可以附加可选的URI映射。proxy_pass的配置规则主要取决于location和URL是否以/结尾：</p> <ul><li>如果location和URL都不以/结尾，那么nginx会将location匹配的部分保留在代理URI中。例如：</li></ul> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">location</span> /api</span> <span class="token punctuation">{</span>
+  <span class="token directive"><span class="token keyword">proxy_pass</span> http://127.0.0.1:8080</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果访问<code>/api/user</code>，那么后端的URI为<code>http://127.0.0.1:8080/api/user</code>。</p> <ul><li>如果location不以/结尾，但URL以/结尾，那么nginx会将location匹配的部分替换为URL中的/。例如：</li></ul> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">location</span> /api</span> <span class="token punctuation">{</span>
+  <span class="token directive"><span class="token keyword">proxy_pass</span> http://127.0.0.1:8080/</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果访问<code>/api/user</code>，那么后端的URI为<code>http://127.0.0.1:8080/user</code>。</p> <ul><li>如果location以/结尾，但URL不以/结尾，那么nginx会将location匹配的部分加上URL中的路径作为代理URI。例如：</li></ul> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">location</span> /api/</span> <span class="token punctuation">{</span>
+  <span class="token directive"><span class="token keyword">proxy_pass</span> http://127.0.0.1:8080/v1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果访问<code>/api/user</code>，那么后端的URI为<code>http://127.0.0.1:8080/v1/user</code>。</p> <ul><li>如果location和URL都以/结尾，那么nginx会将location匹配的部分加上URL中的路径作为代理URI。例如：</li></ul> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">location</span> /api/</span> <span class="token punctuation">{</span>
+  <span class="token directive"><span class="token keyword">proxy_pass</span> http://127.0.0.1:8080/v1/</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果访问<code>/api/user</code>，那么后端的URI为<code>http://127.0.0.1:8080/v1/user</code>。</p></li></ul></li> <li><p>后端springboot模块开发,前端vue2开发,在配置nginx上,前端和后端需要怎样配合</p> <ul><li><p>后端springboot模块开发，前端vue2开发，在配置nginx上，前端和后端需要怎样配合，我可以给你一些建议。一般来说，前端和后端需要遵循以下原则：</p> <ul><li>前端需要将vue项目打包成静态资源文件，放在nginx的html目录下，或者其他指定的目录下。</li> <li>后端需要将springboot项目打包成jar文件，放在服务器上，并运行在指定的端口上。</li> <li>nginx需要配置反向代理，将不同的请求路径代理到不同的后端服务器上，或者同一个后端服务器的不同端口上。</li> <li>nginx还需要配置跨域访问，允许前端请求后端的接口，或者使用CORS机制在后端设置响应头。</li> <li>nginx还可以配置负载均衡，缓存，压缩等功能，提高性能和可用性。</li></ul></li> <li><p>具体分别举一些实例</p> <ul><li><p>具体分别举一些实例，我可以给你一些参考。反向代理和跨域访问的实例有以下几种：</p> <ul><li>反向代理的实例：假设有一个前端项目运行在nginx的80端口，需要访问后端的8080端口，可以在nginx的配置文件中添加如下的location块：</li></ul> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">location</span> /api/</span> <span class="token punctuation">{</span>
+  <span class="token directive"><span class="token keyword">proxy_pass</span> http://127.0.0.1:8080/</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这样，当前端请求<code>/api/user</code>时，nginx会将请求代理到<code>http://127.0.0.1:8080/user</code>，从而实现反向代理。</p> <ul><li>跨域访问的实例：假设有一个前端项目运行在nginx的80端口，需要访问另一个域名的后端接口，可以在nginx的配置文件中添加如下的location块：</li></ul> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">location</span> /api/</span> <span class="token punctuation">{</span>
+  <span class="token directive"><span class="token keyword">proxy_pass</span> http://other.com/api/</span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">add_header</span> Access-Control-Allow-Origin *</span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">add_header</span> Access-Control-Allow-Methods GET,POST,PUT,DELETE,OPTIONS</span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">add_header</span> Access-Control-Allow-Headers Content-Type</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这样，当前端请求<code>/api/user</code>时，nginx会将请求代理到<code>http://other.com/api/user</code>，并在响应头中添加跨域访问的相关信息，从而实现跨域访问。</p></li></ul></li></ul></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/25/2023, 9:35:24 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/nginx/nginx/nginx.html" class="prev">
+        nginx笔记
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6ef7aeda.js" defer></script><script src="/assets/js/2.716a1f37.js" defer></script><script src="/assets/js/51.080e63aa.js" defer></script>
+  </body>
+</html>
